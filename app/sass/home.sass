@@ -1,0 +1,379 @@
+@import "vars"
+
+/*==========  section home ==========*/
+.home
+  background: #19191c url("../img/bg1.png") no-repeat center
+    size: cover
+  color: #fff
+  padding: 259px 0 105px
+  position: relative
+  z-index: 1
+  overflow: hidden
+  .container
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      z-index: -1
+      background: $accent
+      width: 500px
+      height: 1202px
+      transform: skew(-16deg) translate(0,-50%)
+      right: 240px
+      top: 50%
+  .box-text
+    margin: 34px 0 46px
+    line-height: 1.42
+    font-size: 24px
+    color: #fff
+
+.home-img
+  min-width: 813px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 80px 0 0 -170px
+
+
+.advantages
+  padding: 27px 0 0
+
+.advantages-box
+  display: flex
+  align-items: center
+  margin: 0 0 27px
+  font-size: 14px
+  line-height: 1.29
+  &__text
+    padding: 0 0 0 20px
+    width: calc(100% - 50px)
+  &__icon
+    width: 50px
+    display: flex
+    align-items: center
+    justify-content: center
+/*==========  section home end  ==========*/
+
+
+
+/*==========  section type-cars ==========*/
+
+.type-cars-box
+  width: 270px
+  height: 250px
+  text-align: center
+  color: #333
+  margin: 0 auto 50px
+  padding: 30px
+  font-size: 18px
+  border: solid 3px transparent
+    radius: 15px
+  background: #fff
+  &:hover
+    box-shadow: -0.5px 13px 40px 0 rgba(13, 144, 208, 0.3)
+    border: solid 3px #0d90d0
+    color: $accent
+  &__img
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto 30px
+
+/*==========  section type-cars end  ==========*/
+
+
+/*==========  section services  ==========*/
+.services-section
+  background: url("../img/bg2.jpg") no-repeat center
+    size: cover
+  h2, .box-text
+    color: #fff
+  h4
+    text-transform: uppercase
+    margin: 44px 0 22px
+    font-size: 18px
+    font-weight: 600
+
+.services-image
+  width: 100%
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 213px auto 0
+  max-width: 942px
+  &__bg
+    opacity: .45
+
+.services-image-box
+  position: absolute
+
+  &__text
+    box-shadow: -0.5px 13px 40px 0 rgba(13, 144, 208, 0.3)
+    border: solid 3px #0d90d0
+    background: rgba(31, 31, 33, 0.93)
+    max-width: 277px
+    min-width: 277px
+    width: 100%
+    position: absolute
+    padding: 13px 20px
+    font-size: 18px
+    line-height: 1.39
+    border-radius: 3px 3px 0 0
+    left: calc(50% - 138px)
+    transform: translate(-50%,0)
+    bottom: calc(100% + 121px)
+    display: none
+    transition: .3s ease
+    z-index: 1
+    &:before
+      content: ''
+      position: absolute
+      right: -3px
+      width: 3px
+      height: 121px
+      background: #0d90d0
+      top: 100%
+  &__img
+    mix-blend-mode: luminosity
+    transition: .3s ease
+  &:hover
+    .services-image-box__text
+      display: block
+    .services-image-box__img
+      mix-blend-mode: normal
+
+.services-image-box1
+  top: 5px
+  left: 32px
+
+.services-image-box2
+  top: 47px
+  left: 205px
+
+.services-image-box3
+  top: -20px
+  left: 300px
+
+.services-image-box4
+  top: -30px
+  right: 240px
+
+.services-image-box5
+  top: -75px
+  right: 130px
+
+.services-image-box6
+  top: -20px
+  right: 5px
+
+.services-image-box7
+  top: 111px
+  left: 195px
+
+.services-image-box8
+  top: 168px
+  left: 64px
+
+.services-image-box9
+  left: -30px
+  top: 230px
+
+.services-image-box10
+  top: 237px
+  left: 143px
+
+.services-image-box11
+  left: 339px
+  top: 175px
+
+.services-image-box12
+  top: 125px
+  right: 40px
+
+.services-image-box13
+  top: 150px
+  right: -120px
+
+.services-image-box14
+  bottom: 201px
+  right: 150px
+
+.services-image-box15
+  bottom: 77px
+  right: 17px
+
+.services-image-box16
+  bottom: 31px
+  right: 261px
+
+.services-image-box17
+  bottom: 158px
+  left: 257px
+
+.services-image-box18
+  bottom: 174px
+  right: 360px
+
+.services-image-box19
+  top: 72px
+  left: 384px
+
+.services-image-box20
+  top: 153px
+  right: 272px
+
+/*==========  section services end  ==========*/
+
+
+/*==========  section works  ==========*/
+.works
+  .box-text
+    margin: 0 0 46px
+
+
+.works-box
+  margin: 0 0 30px
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  height: 270px
+  width: 100%
+  border: 3px solid transparent
+    radius: 15px
+  position: relative
+  transition: .3s ease
+  font-size: 19px
+  color: #fff
+  line-height: 1.39
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 70%
+    transition: .3s ease
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &__content
+    position: absolute
+    left: 0
+    bottom: 0
+    padding: 0 39px 9px 26px
+    display: none
+    transition: .3s ease
+  &:hover
+    box-shadow: -0.5px 13px 40px 0 rgba(13, 144, 208, 0.3)
+    border: solid 3px #0d90d0
+    &:before
+      background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(13,144,208,1) 100%)
+    .works-box__content
+      display: block
+
+
+.works-box-horizontal
+  height: 500px
+
+.works-box2
+  height: 200px
+
+.works-box3
+  height: 234px
+
+.works-box4
+  height: 236px
+
+.works-box5, .works-box6, .works-box7
+  height: 250px
+/*==========  section works end  ==========*/
+
+
+
+/*==========  section prices  ==========*/
+.prices
+  padding: 120px 0 110px
+/*==========  section prices end  ==========*/
+
+
+
+/*==========  section contact-section  ==========*/
+.contact-section
+  position: relative
+
+.map
+  width: 100%
+  height: 100%
+  position: absolute
+
+.contacts-box
+  margin: 30px 0
+  background: rgba(#fff, .8)
+  max-width: 530px
+  width: 100%
+  padding: 40px
+
+.ymaps-image-with-content
+  filter: drop-shadow(-0.5px 13px 40px rgba(13, 144, 208, 0.3))
+  //box-shadow: -0.5px 13px 40px 0 rgba(13, 144, 208, 0.3)
+
+.list-contacts
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  font-size: 18px
+  color: #333
+  li
+    display: flex
+    align-items: center
+    margin: 0 0 20px
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 10px
+    border: solid 1px #e8e8e8
+      radius: 50%
+    width: 36px
+    height: 36px
+    min-width: 36px
+    background-color: #fff
+    margin: 0 16px 0 0
+  a
+    color: #333
+    &:hover
+      color: $accent
+
+.callback-box
+  margin: 14px 0 0
+  h3
+    text-transform: uppercase
+    font-size: 18px
+    font-weight: bold
+    margin: 0 0 18px
+    color: #333
+  .box-text
+    line-height: 1.5
+    font-size: 18px
+    color: #333
+    margin: 0 0 19px
+    strong
+      display: inline
+/*==========  section contact-section end  ==========*/
+
+
+/*==========  section services  ==========*/
+/*==========  section services end  ==========*/
+
+
+/*==========  section services  ==========*/
+/*==========  section services end  ==========*/
+
+
+/*==========  section services  ==========*/
+/*==========  section services end  ==========*/

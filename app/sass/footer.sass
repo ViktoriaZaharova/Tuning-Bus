@@ -1,0 +1,170 @@
+@import "vars"
+
+/*==========  footer  ==========*/
+footer
+  color: #fff
+  font-size: 14px
+  background: #0d0e0e
+  h4
+    font-weight: 500
+    font-size: 16px
+
+.footer-center
+  padding: 40px 0
+  border:
+    top: 1px solid #434343
+    bottom: 1px solid #434343
+
+.footer-bottom
+  padding: 38px 0
+  font-size: 13px
+  font-weight: 100
+
+.footer-top
+  padding: 53px 0 30px
+  h4
+    margin: 0 0 28px
+    text-transform: uppercase
+  .box-text
+    max-width: 318px
+    color: #d8d8d8
+    font-size: 14px
+    line-height: 21px
+
+
+.links-politics
+  color: #d8d8d8
+  margin: 0 0 0 40px
+
+.list-social
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  font-family: 'Font Awesome 5'
+  color: rgba(255, 255, 255, 0.76)
+  font-size: 16px
+  li
+    margin: 0 50px 0 0
+    &:last-child
+
+      margin: 0
+    a
+      color: rgba(255, 255, 255, 0.76)
+      &:hover
+        color: $accent
+    .icon-font
+      font-family: $icon-font2
+
+.footer-contacts-item
+  display: flex
+  align-items: center
+  color: #fefefe
+  font-size: 16px
+  font-weight: 300
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 44px
+    height: 33px
+    fill: #fff
+  &__body
+    width: calc(100% - 44px)
+    padding: 0 0 0 30px
+  h4
+    font-weight: 500
+    font-size: 16px
+    margin: 0 0 10px
+  a
+    color: #d8d8d8
+    font-weight: 300
+    &:hover
+      color: $accent
+
+.footer-menu
+  font-size: 14px
+  font-weight: 300
+  line-height: 1.93
+  li
+    a
+      color: #d8d8d8
+      &:hover
+        color: $accent
+
+/*==========  footer end  ==========*/
+
+
+
+/*==========  modal  ==========*/
+.modal
+  padding: 0 !important
+
+.modal-dialog
+  max-width: 430px
+
+.modal-content
+  background: #fff
+  border: none
+    radius: 0
+  position: relative
+  padding: 40px 40px 35px
+  .box-text
+    text-align: center
+    margin: 0 auto 25px
+    font-size: 18px
+    color: #333
+    line-height: 1.5
+    width: 100%
+
+
+.modal-header
+  padding: 0
+  border: none
+  margin: 0 auto 18px
+  .close
+    width: 14px
+    height: 14px
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    padding: 0
+    top: 15px
+    right: 15px
+    opacity: 1
+    cursor: pointer
+    margin: 0
+    &:before, &:after
+      content: ''
+      position: absolute
+      left: 7px
+      top: 0
+      background: $black
+      width: 1px
+      height: 100%
+    &:before
+      transform: rotate(45deg)
+    &:after
+      transform: rotate(135deg)
+
+.modal-title
+  width: 100%
+  text-align: center
+  color: #333
+  font-size: 18px
+  font-weight: bold
+  text-transform: uppercase
+
+.modal-body
+  padding: 0
+
+.form-callback
+  button
+    margin: 0 auto
+
+.modal-backdrop
+  background: #0d0e0e
+
+.modal-backdrop.show
+  opacity: .7
+/*==========  modal end  ==========*/

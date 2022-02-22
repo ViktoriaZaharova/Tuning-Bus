@@ -1,0 +1,302 @@
+@import "vars"
+
+/*==========  header  ==========*/
+header
+  position: fixed
+  z-index: 3
+  left: 0
+  top: 0
+  width: 100%
+  box-shadow: -2.2px 5.6px 21px 0 rgba(255, 255, 255, 0.21)
+  background-color: #0d0e0e
+  color: #fff
+  font-size: 14px
+  font-weight: 500
+  padding: 10px 0
+  &.fixed
+    padding: 9.5px 0
+    .logo
+      max-width: 67px
+      margin: 0 auto -10px
+      &:before
+        bottom: -10px
+        border-top-width: 20px
+        border-left-width: 37px
+        border-right-width: 37px
+
+
+.logo
+  transition: .3s ease
+  margin: 0 auto -48px
+  position: relative
+  z-index: 2
+  &:before
+    transition: .3s ease
+    content: ''
+    position: absolute
+    left: 50%
+    bottom: -20px
+    transform: translate(-50%,0)
+    border:
+      top: 60px solid  #0d0e0e
+      left: 87px solid transparent
+      right: 87px solid transparent
+    z-index: -1
+    filter: drop-shadow(0px 11px 14px rgba(255, 255, 255, 0.21))
+
+
+.menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  text-transform: uppercase
+  li
+    margin: 0 40px 0 0
+    &:last-child
+      margin: 0
+    a
+      padding: 0
+      color: #fff
+      &:hover
+        color: $accent
+
+.dropdown-toggle::after
+  border: none
+  content: ''
+  font-family: $icon-font
+  margin-left: 5px
+  vertical-align: 0
+
+.dropdown-menu-list
+  width: 100%
+  max-height: 170px
+  overflow-y: auto
+  &::-webkit-scrollbar, &::-webkit-scrollbar-thumb
+    background: $accent
+    border-radius: 2px
+    width: 4px
+  &::-webkit-scrollbar-track
+    background: #dfdfdf
+
+
+.dropdown-menu
+  top: 100% !important
+  left: 50% !important
+  transform: translate(-50%,0) !important
+  padding: 21px 5px 21px 22px
+  box-shadow: -0.5px 13px 40px 0 rgba(13, 144, 208, 0.3)
+  background-color: #fff
+  border: none
+  margin: 32px 0 0
+  font-size: 14px
+  &:before
+    content: ''
+    top: -9px
+    left: 20px
+    position: absolute
+    box-shadow: -2.2px 5.6px 21px 0 rgba(255, 255, 255, 0.21)
+    border-bottom: 9px solid #fff
+    border-left: 13px solid transparent
+    border-right: 13px solid transparent
+  .dropdown-item
+    padding: 0
+    color: #333
+    line-height: 1.93
+    text-transform: none
+    &:hover
+      color: $accent
+      background: transparent
+
+.header-box
+  text-align: right
+
+.phone
+  font-size: 18px
+  font-weight: 500
+  color: #fff
+  margin: 0 0 5px
+  &:hover
+    color: $accent
+
+.btn-search
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 35px
+  width: 19px
+  min-width: 19px
+  height: 19px
+  fill: #fff
+
+.dropdown-search
+  .dropdown-menu
+    min-width: 493px
+    padding: 14px 12px 16px
+    left: 0 !important
+    &:before
+      left: 57%
+
+.form-search
+  position: relative
+  label
+    margin: 0
+  button
+    position: absolute
+    right: 0
+    top: 0
+    width: 100px
+    height: 50px
+    box-shadow: -0.5px 13px 40px 0 rgba(13, 144, 208, 0.3)
+    border-radius: 0 8px 8px 0
+  input
+    height: 50px
+    //box-shadow: -0.5px 13px 40px 0 rgba(13, 144, 208, 0.3)
+    border: solid 2px #0d90d0
+    padding: 0 100px 0 25px
+    border-radius: 8px
+    font-size: 12px
+
+.result-search
+  margin: 17px auto 0
+  line-height: 1.93
+  font-size: 14px
+  padding: 0 20px
+  a
+    font-size: 14px
+    color: #333
+    &:hover
+      color: $accent
+
+
+.dropdown-works
+  min-width: 1170px
+  max-width: 1170px
+  left: 0 !important
+  transform: translate(-18%,0) !important
+  z-index: 1
+  box-shadow: -0.5px 13px 40px 0 rgba(13, 144, 208, 0.3)
+  background-color: #fff
+  padding: 30px 24px 28px
+  &:before
+    content: ''
+    position: absolute
+    top: -9px
+    left: 230px
+    border:
+      bottom: 9px solid #fff
+      left: 13px solid transparent
+      right: 13px solid transparent
+
+.dropdown-works-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+
+
+.list-works
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  text-align: center
+  width: calc(50% - 60px)
+  font-size: 14px
+  margin: 0
+  &:last-child
+    width: 50%
+  li
+    margin: 0
+    a
+      text-transform: none
+      font-size: 14px
+      font-weight: normal
+      color: #000
+      padding: 0 10px
+      &:hover
+        color: $accent
+
+.list-works-item
+  &__img
+    width: 83px
+    height: 60px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto 25px
+    img
+      max-height: 100%
+
+.btn-burger
+  display: none
+  width: 24px
+  cursor: pointer
+  span
+    display: block
+    width: 100%
+    height: 2px
+    border-radius: 3px
+    background: $accent
+    margin: 0 0 5px
+    &:last-child
+      margin: 0
+
+.mobile-menu
+  display: none
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 4
+  box-shadow: -2.2px 5.6px 21px 0 rgba(255, 255, 255, 0.21)
+  max-width: 300px
+  width: 100%
+  height: 100%
+  overflow-y: auto
+  background: $black
+  color: #fff
+  padding: 30px 20px
+  .logo
+    margin: 0 auto 20px
+    max-width: none
+    display: flex
+    align-items: center
+    justify-content: center
+    &:before
+      display: none
+  .menu
+    li
+      width: 100%
+      margin: 0 0 10px
+  .form-search
+    margin: 20px auto 0
+    width: 100%
+    button
+      position: relative
+      margin: 20px auto 0
+      border-radius: 8px
+
+.btn-close
+  width: 14px
+  height: 14px
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  padding: 0
+  top: 20px
+  right: 20px
+  opacity: 1
+  cursor: pointer
+  margin: 0
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 10px
+    top: 0
+    background: #fff
+    width: 1px
+    height: 100%
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(135deg)
+/*==========  header end  ==========*/
