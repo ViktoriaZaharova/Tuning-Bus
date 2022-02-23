@@ -8,6 +8,19 @@ footer
   h4
     font-weight: 500
     font-size: 16px
+  .advantages
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      transform: translate(-50%,0)
+      bottom: 0
+      height: 1px
+      background: #434343
+      max-width: 1170px
+      width: calc(100% - 30px)
+    
 
 .footer-center
   padding: 40px 0

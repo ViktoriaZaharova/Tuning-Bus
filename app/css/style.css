@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @font-face {
   font-family: "Ionicons";
@@ -95,7 +96,8 @@ input, textarea, select {
   border: solid 1px #e8e8e8;
   background-color: #fff;
   color: #000;
-  font-size: 12px; }
+  font-size: 12px;
+  font-weight: normal; }
   input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
     color: #666; }
   input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
@@ -109,6 +111,26 @@ input, textarea, select {
     -webkit-box-shadow: none;
             box-shadow: none; }
 
+textarea {
+  width: 100%;
+  height: 116px;
+  border: solid 1px #e8e8e8;
+  padding: 16px 20px; }
+
+.error-label input {
+  color: #ff4343;
+  -webkit-box-shadow: 0 0 24px 0 rgba(255, 67, 67, 0.22);
+          box-shadow: 0 0 24px 0 rgba(255, 67, 67, 0.22);
+  border: solid 1px #ff4343; }
+  .error-label input::-webkit-input-placeholder {
+    color: #ff4343; }
+  .error-label input::-moz-placeholder {
+    color: #ff4343; }
+  .error-label input::-ms-input-placeholder {
+    color: #ff4343; }
+  .error-label input::placeholder {
+    color: #ff4343; }
+
 label {
   display: block;
   width: 100%;
@@ -120,9 +142,9 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   color: #999;
   font-size: 12px; }
 
@@ -204,6 +226,13 @@ button, .btn {
     background: #0d90d0;
     color: #fff; }
 
+.btn-blue {
+  background: #0d90d0;
+  color: #fff; }
+  .btn-blue:hover {
+    color: #fff;
+    background: #0d0e0e; }
+
 .container {
   max-width: 1200px; }
 
@@ -283,6 +312,9 @@ h2 {
 .mb-50 {
   margin-bottom: 50px; }
 
+.mb-30 {
+  margin-bottom: 30px; }
+
 .text-transform {
   text-transform: uppercase; }
 
@@ -317,3 +349,45 @@ h2 {
     content: '$';
     margin: 0 0 0 5px;
     font-family: "ElegantIcons"; }
+
+.links-toggle:after {
+  content: '';
+  font-family: "Ionicons"; }
+
+.page {
+  padding: 170px 0 0; }
+  .page h1 {
+    margin: 0 0 40px;
+    color: #333;
+    font-size: 30px;
+    font-weight: bold; }
+
+.breadcrumb-nav {
+  margin: 0 0 50px;
+  width: 100%; }
+
+.breadcrumb {
+  width: 100%;
+  padding: 0;
+  border: none;
+    border-radius: 0;
+  background: transparent;
+  font-size: 14px;
+  color: #666; }
+  .breadcrumb a {
+    color: #0d90d0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .breadcrumb a:after {
+      content: '|';
+      display: inline-block;
+      margin: 0 5px; }
+
+.breadcrumb-item + .breadcrumb-item {
+  padding: 0; }
+  .breadcrumb-item + .breadcrumb-item:before {
+    display: none; }

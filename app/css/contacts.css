@@ -1,2 +1,70 @@
 /*==========  contacts page  ==========*/
+.page-contacts {
+  padding-bottom: 148px; }
+  .page-contacts .map {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin: 0 0 43px; }
+  .page-contacts .list-contacts li {
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 0 0 34px; }
+    .page-contacts .list-contacts li:last-child {
+      margin: 0; }
+  .page-contacts .callback-box {
+    margin: 0; }
+    .page-contacts .callback-box .box-text {
+      margin: 0 0 22px; }
+    .page-contacts .callback-box .form label {
+      margin: 0 0 16px; }
+      .page-contacts .callback-box .form label:last-child {
+        margin: 0 0 16px; }
+    .page-contacts .callback-box .form .checkbox {
+      margin: 0; }
+    .page-contacts .callback-box .form button {
+      width: 100%;
+      max-width: 216px;
+      margin: 0 0 0 auto; }
+
+.contact-item {
+  margin: 0 0 40px; }
+  .contact-item:last-child {
+    margin: 0; }
+  .contact-item h3 {
+    font-weight: bold;
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333; }
+
+.social {
+  margin: 20px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .social li {
+    margin: 0 13px 0 0; }
+    .social li:last-child {
+      margin: 0; }
+    .social li a {
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+
 /*==========  contacts page end  ==========*/
