@@ -132,10 +132,15 @@
       height: 350px; }
   .breadcrumb-nav {
     margin: 0 0 30px; }
-  .page-works {
+  .page-works, .page-category, .page-blog {
     padding-bottom: 60px; }
   .service-item {
-    width: 25%; } }
+    width: 25%; }
+  .blog-item {
+    width: 100%; }
+  .blog-sidebar {
+    margin: 0 0 30px;
+    max-width: none; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -192,7 +197,15 @@
   .car-brands-item {
     margin: 0 0 30px;
     width: 20%;
-    font-size: 16px; } }
+    font-size: 16px; }
+  .blog-item {
+    width: 100%; }
+  .slider-nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .recommended-article {
+    margin-bottom: 50px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -214,7 +227,11 @@
     .car-brands h2 {
       margin: 0 0 40px; }
   .car-brands-item {
-    width: 25%; } }
+    width: 25%; }
+  .blog-item {
+    width: 100%; }
+  .article-img {
+    height: 400px; } }
 
 @media only screen and (max-width: 480px) {
   h2 {
@@ -230,7 +247,11 @@
   .services-image-box__text {
     font-size: 14px; }
   .car-brands-item {
-    width: 33.3%; } }
+    width: 33.3%; }
+  .blog-item {
+    width: 100%; }
+  .article-img {
+    height: 300px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {
@@ -249,6 +270,8 @@
     width: 100%;
     padding: 0; }
   .service-wrapper {
-    margin: 0; }
+    margin: 30px 0 0; }
   .car-brands-item {
-    width: 50%; } }
+    width: 50%; }
+  .blog-item {
+    width: 100%; } }

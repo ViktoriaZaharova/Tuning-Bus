@@ -37,3 +37,52 @@ $('.btn-toggle').on('click', function (e) {
     $('.works-box-col').fadeIn();
     $(this).hide();
 });
+
+$('.btn-toggle-blog').on('click', function (e) {
+    e.preventDefault();
+    $('.blog-col:hidden').slice(0, 3).slideDown();
+
+    var onBlock = $('.blog-col:hidden').length;
+    if (onBlock <= 0) {
+        $('.btn-toggle-blog').hide();
+    }
+});
+
+// активная ссылка меню
+$('.blog-section-list li a').each(function () {
+    let location = window.location.href;
+    let link = this.href;
+    if (location === link) {
+        $(this).addClass('active');
+    }
+});
+// end
+
+$('.recommended-article-slider').slick({
+    slidesToShow: 4,
+    appendArrows: '.recommended-article-slider__nav',
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 3,
+
+            }
+        },
+        {
+            breakpoint: 650,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+
+    ]
+});

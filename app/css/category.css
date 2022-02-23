@@ -1,0 +1,11 @@
+/*==========  category page  ==========*/
+.page-category {
+  padding-bottom: 75px; }
+
+.category-item .service-item__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+/*==========  category page end  ==========*/

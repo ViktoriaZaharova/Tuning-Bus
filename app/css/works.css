@@ -1,0 +1,28 @@
+/*==========  works page  ==========*/
+.page-works {
+  padding-bottom: 124px; }
+
+.btn-toggle {
+  margin: 34px auto 0; }
+
+.box-text-hidden {
+  max-height: 85px;
+  overflow: hidden; }
+  .box-text-hidden.open {
+    overflow: visible;
+    max-height: none; }
+
+.links-toggle {
+  margin: 17px 0 0;
+  font-size: 14px; }
+
+.type-cars-row {
+  margin-top: 35px;
+  margin-bottom: 50px; }
+
+.works-box-col {
+  display: none; }
+  .works-box-col:nth-child(-n+6) {
+    display: block; }
+
+/*==========  works page end  ==========*/

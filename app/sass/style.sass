@@ -346,3 +346,68 @@ h2
   &:before
     display: none
 
+.pagination-nav
+  width: 100%
+  margin: 39px auto 0
+
+.pagination
+  margin: 0
+  border: none
+    radius: 0
+  background: transparent
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 18px
+  color: #333
+  .page-link
+    color: #333
+    border: none
+      radius: 0
+    padding: 0
+    &:hover
+      color: $accent
+      background: transparent
+  li
+    margin: 0 10px 0 0
+    &:last-child
+      margin: 0
+  .active
+    .page-link
+      background: transparent
+      color: $accent
+
+.page-link-arrow
+  font-family: $icon-font
+
+.slider-nav
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  margin: 0 0 30px
+
+.slick-arrow
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #333
+  font-family: $icon-font
+  width: 14px
+  height: 22px
+  background: transparent
+  opacity: 1
+  cursor: pointer
+  z-index: 1
+  font-size: 20px
+
+  &:hover
+    color: #999
+
+.slick-prev
+  transform: rotate(-90deg)
+  margin: 0 20px 0 0
+
+.slick-next
+  transform: rotate(90deg)
