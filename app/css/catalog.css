@@ -1,0 +1,255 @@
+/*==========  catalog page  ==========*/
+.page-catalog {
+  padding-bottom: 118px; }
+
+.category-product-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -10px 22px; }
+
+.category-product-col {
+  width: 25%;
+  padding: 0 5px; }
+
+.category-product-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f5f5f5;
+  border-radius: 3px;
+  padding: 19px 13px 19px 16px;
+  color: #333;
+  font-size: 14px;
+  border: 2px solid transparent; }
+  .category-product-box__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 4px 0; }
+  .category-product-box__body {
+    width: calc(100% - 50px);
+    padding: 0 0 0 13px; }
+  .category-product-box:hover {
+    -webkit-box-shadow: -0.5px 13px 40px 0 rgba(13, 144, 208, 0.3);
+            box-shadow: -0.5px 13px 40px 0 rgba(13, 144, 208, 0.3);
+    border-color: #0d90d0;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#0d90d0));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #0d90d0 100%);
+    color: #fff; }
+
+.sorting-wrapper {
+  width: 100%;
+  margin: 0 0 30px;
+  padding: 0 0 26px;
+  border-bottom: 1px solid #dfdfdf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.sorting-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #999;
+  font-size: 14px; }
+  .sorting-box p {
+    margin: 0 10px 0 0; }
+
+.list-sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .list-sorting li {
+    margin: 0 20px 0 0; }
+    .list-sorting li:last-child {
+      margin: 0; }
+    .list-sorting li a {
+      color: #333;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .list-sorting li a:hover {
+        color: #0d90d0; }
+    .list-sorting li .active {
+      color: #0d90d0; }
+      .list-sorting li .active:after {
+        content: '';
+        width: 12px;
+        height: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        background: url("../img/sort-1.png") no-repeat center;
+          background-size: 100%;
+        margin: 0 0 0 5px; }
+
+.filter-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #999;
+  font-size: 14px; }
+  .filter-box p {
+    margin: 0 10px 0 0; }
+
+.list-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .list-filter li {
+    margin: 0 10px 0 0; }
+    .list-filter li:last-child {
+      margin: 0; }
+    .list-filter li a {
+      color: #333; }
+      .list-filter li a:hover {
+        color: #0d90d0; }
+
+.product-card {
+  margin: 0 0 40px;
+  width: 100%;
+  font-size: 18px; }
+  .product-card__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 35px 0;
+    width: 100%;
+    height: 220px; }
+    .product-card__img img {
+      max-height: 100%; }
+  .product-card__title {
+    color: #333;
+    margin: 0 0 19px; }
+    .product-card__title:hover {
+      color: #0d90d0; }
+  .product-card__body {
+    width: 100%;
+    padding: 18px 18px 0; }
+  .product-card__footer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .product-card__price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; }
+
+.amount {
+  border-radius: 3px;
+  border: solid 1px #dfdfdf;
+  width: 96px;
+  height: 36px;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .amount span {
+    cursor: pointer;
+    font-size: 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #999; }
+  .amount input {
+    border: none;
+      border-radius: 0;
+    height: 100%;
+    width: 42px;
+    text-align: center;
+    padding: 0;
+    font-size: 18px;
+    color: #333; }
+    .amount input::-webkit-input-placeholder {
+      color: #333; }
+    .amount input::-moz-placeholder {
+      color: #333; }
+    .amount input::-ms-input-placeholder {
+      color: #333; }
+    .amount input::placeholder {
+      color: #333; }
+
+/*==========  catalog page end  ==========*/
