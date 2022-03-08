@@ -118,6 +118,10 @@ footer {
 /*==========  modal  ==========*/
 .modal {
   padding: 0 !important; }
+  .modal .btn {
+    margin: 0 auto;
+    max-width: 216px;
+    width: 100%; }
 
 .modal-dialog {
   max-width: 430px; }

@@ -73,7 +73,10 @@ a {
   text-decoration: none;
   -webkit-transition: .3s ease;
   transition: .3s ease;
-  outline: none; }
+  outline: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
   a:hover, a:focus {
     text-decoration: none; }
 
@@ -165,12 +168,14 @@ label {
     position: absolute;
     width: 11px;
     height: 8px;
-    background: url("../img/check.svg") no-repeat center;
-      background-size: 100%;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
+
+.inp-check:checked + .checkbox-custom:before {
+  background: url("../img/check.svg") no-repeat center;
+    background-size: 100%; }
 
 button, .btn {
   outline: none;
@@ -233,6 +238,13 @@ button, .btn {
     color: #fff;
     background: #0d0e0e; }
 
+.btn-grey {
+  background: #f5f5f5;
+  color: #333; }
+  .btn-grey:hover {
+    background: #0d90d0;
+    color: #fff; }
+
 .container {
   max-width: 1200px; }
 
@@ -271,6 +283,9 @@ a.color-accent:hover {
 
 .bg-grey {
   background: #f5f5f5; }
+
+.bg-blue {
+  background: #0d90d0; }
 
 h1 {
   font-size: 50px;
@@ -395,6 +410,9 @@ h2 {
   .breadcrumb-item + .breadcrumb-item:before {
     display: none; }
 
+.breadcrumb-item.active {
+  color: #666; }
+
 .pagination-nav {
   width: 100%;
   margin: 39px auto 0; }
@@ -478,3 +496,44 @@ h2 {
 .slick-next {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg); }
+
+.pagination-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.pagination {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .pagination li {
+    margin: 0 10px 0 0; }
+    .pagination li:last-child {
+      margin: 0; }
+    .pagination li a {
+      color: #333; }
+      .pagination li a:hover {
+        color: #0d90d0; }
+    .pagination li .page-link-arrow {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      font-family: "Ionicons"; }
+    .pagination li .active {
+      color: #0d90d0; }

@@ -20,7 +20,12 @@
   .btn-search {
     margin: 0 15px; }
   .service-item {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .category-product-col {
+    width: 33.3%; }
+  .sorting-box {
+    margin: 0 0 10px;
+    width: 100%; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -140,7 +145,19 @@
     width: 100%; }
   .blog-sidebar {
     margin: 0 0 30px;
-    max-width: none; } }
+    max-width: none; }
+  .list-sorting li {
+    margin: 0 10px 0 0; }
+  .category-product-col {
+    width: 50%; }
+  .page-catalog {
+    padding: 150px 0 80px; }
+  .product-gallery-photo .product-img {
+    height: 350px; }
+  .page-product {
+    padding: 130px 0 60px; }
+  .breadcrumb-nav-page {
+    margin: 20px 0; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -205,7 +222,48 @@
         -ms-flex-pack: center;
             justify-content: center; }
   .recommended-article {
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+  .sidebar {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    max-width: 280px;
+    width: 100%;
+    padding: 20px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+    background: #fff; }
+  .btn-filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    margin: 0 0 20px; }
+  .btn-close-sidebar, .sidebar-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .product-information {
+    margin: 0 0 40px; }
+  .nav-tabs .nav-item {
+    margin: 0 30px 0 0; }
+  .home-ford .form button {
+    background: #000; }
+  .home-ford .form .color-accent {
+    color: #fff; }
+  .quote {
+    font-size: 16px;
+    padding: 20px;
+    margin: 20px 0; }
+  .changes {
+    margin: 80px 0 0; }
+  .callback {
+    padding: 40px 0; }
+    .callback .box-text {
+      font-size: 16px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -231,7 +289,34 @@
   .blog-item {
     width: 100%; }
   .article-img {
-    height: 400px; } }
+    height: 400px; }
+  .product-card__img {
+    padding: 20px;
+    height: 180px; }
+  .product-gallery-photo {
+    width: 100%;
+    padding: 0; }
+    .product-gallery-photo .product-img {
+      height: auto;
+      padding: 20px;
+      max-width: none; }
+  .product-gallery-preview {
+    width: 100%;
+    height: auto;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 20px 0; }
+    .product-gallery-preview .slick-slide {
+      margin: 0 10px 0 0; }
+    .product-gallery-preview .product-img {
+      height: 80px; }
+  .nav-tabs {
+    font-size: 15px; }
+    .nav-tabs .nav-link {
+      padding: 10px 0; }
+  .product-information {
+    margin: 0 0 30px; } }
 
 @media only screen and (max-width: 480px) {
   h2 {
@@ -274,4 +359,27 @@
   .car-brands-item {
     width: 50%; }
   .blog-item {
-    width: 100%; } }
+    width: 100%; }
+  .category-product-col {
+    width: 100%; }
+  h1 {
+    font-size: 26px; }
+  .page h1 {
+    font-size: 21px;
+    margin: 0 0 30px;
+    padding: 0 0 0 30px; }
+  .page-catalog {
+    padding: 120px 0 70px; }
+  .quote {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .quote-icon {
+      margin: 0 0 10px; }
+    .quote-text {
+      padding: 0;
+      width: 100%; } }

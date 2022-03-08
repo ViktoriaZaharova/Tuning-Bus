@@ -2,13 +2,23 @@
 
 /*==========  section home ==========*/
 .home
-  background: #19191c url("../img/bg1.png") no-repeat center
-    size: cover
+  background: #19191c
   color: #fff
   padding: 259px 0 105px
   position: relative
   z-index: 1
   overflow: hidden
+  &:before
+    content: ''
+    position: absolute
+    z-index: -1
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: url("../img/bg1.png") no-repeat center
+      size: cover
+    opacity: .75
   .container
     position: relative
     &:before

@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -216,13 +217,250 @@
 
 
     <div class="row">
-      <div class="col-12 col-lg-3">
+      <div class="col-12 col-md-4 col-lg-3">
+        <a href="#" class="btn btn-accent btn-filter">Фильтр</a>
         <div class="sidebar">
+          <div class="btn-close-sidebar"></div>
+          <h3 class="sidebar-title">Фильтр</h3>
 
+          <form method="post" class="form-filter">
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="heading1" data-toggle="collapse"
+                     data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                  <h4>Цена</h4>
+                  <div class="collapse-arrow"></div>
+                </div>
+
+                <div id="collapse1" class="collapse show" aria-labelledby="heading1"
+                     data-parent="#accordionExample">
+                  <div class="card-body">
+
+                    <div class="range_val">
+                      <div class="inp-group">
+                        <input type="text" name="dec" class="dec1">
+                        <span class="line">-</span>
+                        <input type="text" name="dec" class="dec2">
+                      </div>
+                      <div class="slider-range"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingOne" data-toggle="collapse"
+                     data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <h4>Категории раздела</h4>
+                  <div class="collapse-arrow"></div>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                     data-parent="#accordionExample">
+                  <div class="card-body">
+                    <ul class="list-checkbox my-ul">
+                      <li>
+                        <label class="checkbox">
+                          <input type="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-text">Для грузовиков</span>
+                        </label>
+                      </li>
+
+                      <li>
+                        <label class="checkbox">
+                          <input type="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-text">Для яхт и катеров</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo" data-toggle="collapse"
+                     data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <h4>Бренд</h4>
+                  <div class="collapse-arrow"></div>
+                </div>
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                     data-parent="#accordionExample">
+                  <div class="card-body">
+                    <ul class="list-checkbox my-ul">
+                      <li>
+                        <label class="checkbox">
+                          <input type="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-text">AGC</span>
+                        </label>
+                      </li>
+
+                      <li>
+                        <label class="checkbox">
+                          <input type="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-text">Art-X</span>
+                        </label>
+                      </li>
+
+                      <li>
+                        <label class="checkbox">
+                          <input type="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-text">Auto Clover</span>
+                        </label>
+                      </li>
+
+                      <li>
+                        <label class="checkbox">
+                          <input type="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-text">Autobox</span>
+                        </label>
+                      </li>
+
+                      <li>
+                        <label class="checkbox">
+                          <input type="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-text">Bastion</span>
+                        </label>
+                      </li>
+
+                      <li>
+                        <label class="checkbox">
+                          <input type="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-text">Better Grip</span>
+                        </label>
+                      </li>
+
+                      <li>
+                        <label class="checkbox">
+                          <input type="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-text">Burmester</span>
+                        </label>
+                      </li>
+
+                      <li>
+                        <label class="checkbox">
+                          <input type="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-text">Autobox</span>
+                        </label>
+                      </li>
+
+                      <li>
+                        <label class="checkbox">
+                          <input type="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-text">Benlogic</span>
+                        </label>
+                      </li>
+
+                      <li>
+                        <label class="checkbox">
+                          <input type="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-text">Autobox</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header collapsed" id="headingThree" data-toggle="collapse"
+                     data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <h4>Страна</h4>
+                  <div class="collapse-arrow"></div>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <ul class="list-checkbox my-ul">
+                      <li>
+                        <label class="checkbox">
+                          <input type="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-text">Германия</span>
+                        </label>
+                      </li>
+
+                      <li>
+                        <label class="checkbox">
+                          <input type="checkbox" class="inp-check" checked>
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-text">КНР</span>
+                        </label>
+                      </li>
+
+                      <li>
+                        <label class="checkbox">
+                          <input type="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-text">Польша</span>
+                        </label>
+                      </li>
+
+                      <li>
+                        <label class="checkbox">
+                          <input type="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-text">Россия</span>
+                        </label>
+                      </li>
+
+                      <li>
+                        <label class="checkbox">
+                          <input type="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-text">Тайвань</span>
+                        </label>
+                      </li>
+
+                      <li>
+                        <label class="checkbox">
+                          <input type="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-text">Южная Корея</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-grey btn-clear">Очистить</button>
+          </form>
+
+          <div class="sales-subscribe">
+            <h4>Хотите получить самое
+              выгодное предложение?</h4>
+            <div class="box-text">
+              <p>Заполните онлайн форму и мы
+                расскажем все вам условия
+                лучшей цены!</p>
+            </div>
+
+            <form method="post" class="form">
+              <label><input type="text" placeholder="Ваше имя" name="name"></label>
+              <label><input type="text" placeholder="Ваш телефон" name="phone"></label>
+              <label class="checkbox">
+                <input type="checkbox" name="checkbox" checked class="inp-check">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Даю согласие на обработку <a href="#"
+                                                                         class="d-inline text-decoration color-white"
+                                                                         target="_blank">персональных данных</a></span>
+              </label>
+              <button type="submit" class="btn btn-black">Отправить</button>
+            </form>
+          </div>
         </div>
       </div>
 
-      <div class="col-12 col-lg-9">
+      <div class="col-12 col-md-8 col-lg-9">
         <div class="sorting-wrapper">
           <div class="sorting-box">
             <p>Сортировать по:</p>
@@ -308,7 +546,7 @@
 
                   <div class="amount">
                     <span class="down">-</span>
-                    <input type="text" value="1" />
+                    <input type="text" value="1"/>
                     <span class="up">+</span>
                   </div>
                 </div>
@@ -327,7 +565,7 @@
 
                   <div class="amount">
                     <span class="down">-</span>
-                    <input type="text" value="1" />
+                    <input type="text" value="1"/>
                     <span class="up">+</span>
                   </div>
                 </div>
@@ -346,7 +584,7 @@
 
                   <div class="amount">
                     <span class="down">-</span>
-                    <input type="text" value="1" />
+                    <input type="text" value="1"/>
                     <span class="up">+</span>
                   </div>
                 </div>
@@ -365,7 +603,7 @@
 
                   <div class="amount">
                     <span class="down">-</span>
-                    <input type="text" value="1" />
+                    <input type="text" value="1"/>
                     <span class="up">+</span>
                   </div>
                 </div>
@@ -384,7 +622,7 @@
 
                   <div class="amount">
                     <span class="down">-</span>
-                    <input type="text" value="1" />
+                    <input type="text" value="1"/>
                     <span class="up">+</span>
                   </div>
                 </div>
@@ -403,7 +641,7 @@
 
                   <div class="amount">
                     <span class="down">-</span>
-                    <input type="text" value="1" />
+                    <input type="text" value="1"/>
                     <span class="up">+</span>
                   </div>
                 </div>
@@ -422,7 +660,7 @@
 
                   <div class="amount">
                     <span class="down">-</span>
-                    <input type="text" value="1" />
+                    <input type="text" value="1"/>
                     <span class="up">+</span>
                   </div>
                 </div>
@@ -441,7 +679,7 @@
 
                   <div class="amount">
                     <span class="down">-</span>
-                    <input type="text" value="1" />
+                    <input type="text" value="1"/>
                     <span class="up">+</span>
                   </div>
                 </div>
@@ -460,7 +698,7 @@
 
                   <div class="amount">
                     <span class="down">-</span>
-                    <input type="text" value="1" />
+                    <input type="text" value="1"/>
                     <span class="up">+</span>
                   </div>
                 </div>
@@ -469,6 +707,25 @@
           </div>
           <div class="col-12">
             <a href="#" class="btn btn-black btn-toggle">Показать еще</a>
+            <nav class="nav-pagination">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link page-link-arrow" href="#" aria-label="Previous">
+                    
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">...</a></li>
+                <li class="page-item"><a class="page-link" href="#">25</a></li>
+                <li class="page-item">
+                  <a class="page-link page-link-arrow" href="#" aria-label="Next">
+                    
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
@@ -771,8 +1028,33 @@
   </div>
 </div>
 
+<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">спасибо за заявку!</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="box-text">
+          <p>Наш менеджер уже принял в
+            обработку Ваш запрос!
+          </p>
+        </div>
+
+        <a href="#" class="btn btn-black" data-dismiss="modal" aria-label="Close">Ок, жду</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="overlay"></div>
 
 <script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"
+        integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
@@ -780,6 +1062,7 @@
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
 <script src="js/map.js"></script>
+<script src="js/catalog.js"></script>
 <script src="js/common.js"></script>
 
 </body>
