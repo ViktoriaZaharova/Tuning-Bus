@@ -182,7 +182,11 @@
   .bus-item-category-v2 .service-item__img {
     height: 200px; }
   .bus-gallery-item {
-    height: 350px; } }
+    height: 350px; }
+  .refurbishment-home .home-img-master {
+    margin: 20px auto 0; }
+  .refurbishment-home .master-quote {
+    left: 50%; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -296,7 +300,9 @@
     .bus-item-category .service-item__img {
       height: 250px; }
   .bus-item-category-v2 .service-item__img {
-    height: 200px; } }
+    height: 200px; }
+  .p-80 {
+    padding: 60px 0; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {

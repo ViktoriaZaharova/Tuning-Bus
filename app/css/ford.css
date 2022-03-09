@@ -215,6 +215,8 @@
 
 .models {
   padding: 0 0 80px; }
+  .models .service-wrapper {
+    margin-top: 0; }
 
 .bus-item-category-v2 .service-item__img {
   height: 220px; }
