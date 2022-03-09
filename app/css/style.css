@@ -403,7 +403,8 @@ h2 {
     .breadcrumb a:after {
       content: '|';
       display: inline-block;
-      margin: 0 5px; }
+      margin: 0 5px;
+      color: #666666; }
 
 .breadcrumb-item + .breadcrumb-item {
   padding: 0; }
@@ -537,3 +538,23 @@ h2 {
       font-family: "Ionicons"; }
     .pagination li .active {
       color: #0d90d0; }
+
+.list-check {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.44; }
+  .list-check li {
+    padding: 0 0 0 21px;
+    position: relative;
+    margin: 0 0 5px; }
+    .list-check li:last-child {
+      margin: 0; }
+    .list-check li:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 13px;
+      height: 11px;
+      background: url("../img/check.svg") no-repeat center;
+        background-size: 100%; }

@@ -25,7 +25,9 @@
     width: 33.3%; }
   .sorting-box {
     margin: 0 0 10px;
-    width: 100%; } }
+    width: 100%; }
+  .home-img-master {
+    min-width: 434px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -155,9 +157,32 @@
   .product-gallery-photo .product-img {
     height: 350px; }
   .page-product {
-    padding: 130px 0 60px; }
+    padding: 150px 0 60px; }
   .breadcrumb-nav-page {
-    margin: 20px 0; } }
+    margin: 20px 0; }
+  .home-img-master {
+    max-width: 434px; }
+  .master-quote {
+    left: 50%;
+    -webkit-transform: skewX(-20deg) translate(-50%, 0);
+            transform: skewX(-20deg) translate(-50%, 0);
+    font-size: 16px;
+    bottom: 20px; }
+    .master-quote .box-text {
+      font-size: 14px;
+      margin: 0; }
+  .bus-item-category {
+    width: 100%;
+    padding: 0; }
+    .bus-item-category .service-item__img {
+      height: 300px;
+      padding: 20px; }
+  .models {
+    padding: 0 0 50px; }
+  .bus-item-category-v2 .service-item__img {
+    height: 200px; }
+  .bus-gallery-item {
+    height: 350px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -263,7 +288,15 @@
   .callback {
     padding: 40px 0; }
     .callback .box-text {
-      font-size: 16px; } }
+      font-size: 16px; }
+  .home-ford-main {
+    padding: 170px 0 0; }
+  .bus-item-category {
+    width: 100%; }
+    .bus-item-category .service-item__img {
+      height: 250px; }
+  .bus-item-category-v2 .service-item__img {
+    height: 200px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -316,7 +349,17 @@
     .nav-tabs .nav-link {
       padding: 10px 0; }
   .product-information {
-    margin: 0 0 30px; } }
+    margin: 0 0 30px; }
+  .home-ford .form {
+    margin: 30px 0 0; }
+    .home-ford .form h3 {
+      font-size: 16px;
+      margin: 0 0 15px; }
+    .home-ford .form p {
+      font-size: 16px;
+      margin: 0 0 15px; }
+  .bus-item-category {
+    width: 100%; } }
 
 @media only screen and (max-width: 480px) {
   h2 {
@@ -336,6 +379,8 @@
   .blog-item {
     width: 100%; }
   .article-img {
+    height: 300px; }
+  .bus-gallery-item {
     height: 300px; } }
 
 /* Custom, iPhone Retina */
@@ -382,4 +427,14 @@
       margin: 0 0 10px; }
     .quote-text {
       padding: 0;
-      width: 100%; } }
+      width: 100%; }
+  .master-quote .box-text {
+    font-size: 14px; }
+  .bus-gallery-item {
+    height: 250px; }
+  .btn {
+    padding: 0 30px; }
+  .product-bus-box__head {
+    margin: 0 0 20px; }
+  .page-product {
+    padding: 130px 0 60px; } }

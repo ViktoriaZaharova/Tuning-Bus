@@ -169,6 +169,42 @@ $('.product-gallery-photo').slick({
     arrows: false,
 });
 
+$('.bus-gallery-photo').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false
+});
+
+$('.bus-gallery-preview').slick({
+    slidesToShow: 4,
+    asNavFor: '.bus-gallery-photo',
+    focusOnSelect: true,
+    prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-angle-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="fas fa-angle-right"></i></button>',
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 3,
+
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        // {
+        //     breakpoint: 420,
+        //     settings: {
+        //         slidesToShow: 1,
+        //     }
+        // }
+
+    ]
+});
+
 //плавный скролл
 $(document).ready(function () { //плавный скролл
     $(".go_to").on("click", function (event) {

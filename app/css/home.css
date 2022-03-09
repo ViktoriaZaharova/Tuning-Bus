@@ -25,7 +25,8 @@
       z-index: -1;
       background: #0d90d0;
       width: 500px;
-      height: 1202px;
+      height: calc(100% + 350px);
+      min-height: 1202px;
       -webkit-transform: skew(-16deg) translate(0, -50%);
               transform: skew(-16deg) translate(0, -50%);
       right: 240px;
