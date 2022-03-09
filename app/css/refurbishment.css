@@ -1,0 +1,27 @@
+/*==========  refurbishment page  ==========*/
+.refurbishment-home:before {
+  opacity: .2;
+  background: url("../img/bg-refurbishment.jpg") no-repeat center;
+    background-size: cover; }
+
+.refurbishment-home .home-img-master {
+  margin: 0 100px 0 -150px; }
+
+.refurbishment-home .master-quote {
+  left: -360px; }
+
+.service-item-v2 .service-item__img {
+  padding: 20px; }
+  .service-item-v2 .service-item__img img {
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain; }
+
+.refurbishment.bg-grey .quote {
+  background: #f5f5f5; }
+
+.home-service:before {
+  background: url("../img/bg-service-home.jpg") no-repeat center;
+    background-size: cover; }
+
+/*==========  refurbishment page end ==========*/
