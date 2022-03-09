@@ -1,5 +1,361 @@
 @import "vars"
 
 /*==========  order page  ==========*/
+.order-home
+  padding-bottom: 89px
 
+  &__image
+    display: flex
+    align-items: center
+    justify-content: center
+
+  .product-information
+    max-width: 560px
+    margin: 0 0 0 auto
+
+    .btn
+      margin: 30px 0 0
+      padding: 0 33px
+
+
+.form-order
+  margin: 100px 0 0
+
+  .label-parameters-bus
+    &:last-child
+      margin: 0 auto 40px
+  button[type="submit"]
+    padding: 0 43px
+  .tab-content
+    margin: 74px 0 0
+    position: relative
+    border-top: 1px solid #dfdfdf
+    padding: 50px 0 0
+  .tab-pane
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      top: -73px
+      left: 40px
+      width: 44px
+      height: 44px
+      transform: rotate(45deg)
+      background: #fff
+    &.active
+      &:before
+        border: 1px solid #dfdfdf
+          bottom: none
+          right: none
+
+
+.form-step
+  width: 100%
+  text-align: center
+  margin: 0 0 120px
+
+  &:last-child
+    margin: 0
+
+  h5
+    color: $accent
+    margin: 0 auto 19px
+    font-weight: bold
+    font-size: 16px
+
+  h3
+    margin: 0 auto 50px
+    font-size: 24px
+    font-weight: bold
+    color: #333
+
+  h4
+    margin: 0 auto 40px
+    font-weight: bold
+    font-size: 18px
+    color: #333
+
+
+.label-parameters-bus
+  width: 100%
+  max-width: 270px
+  height: 250px
+  padding: 33px 30px 30px
+  text-align: center
+  position: relative
+  margin: 0 auto 40px
+  background: #fff
+  cursor: pointer
+
+
+.form-order-inp
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background: transparent
+  border: 3px solid transparent
+    radius: 15px
+
+
+.form-order-inp:checked
+  border-color: $accent
+  box-shadow: -0.5px 13px 40px 0 rgba(13, 144, 208, 0.3)
+
+  + .label-parameters-bus__custom
+    background: $accent
+
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+      font-size: 14px
+      font-family: $icon-font
+      color: #fff
+
+
+.label-parameters-bus__custom
+  position: absolute
+  top: 14px
+  right: 14px
+  width: 20px
+  height: 20px
+  border-radius: 3px
+
+.label-parameters-bus__img
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 auto 29px
+
+.sizes-product
+  width: 100%
+  margin: 35px 0 0
+
+.sizes-product-line
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  flex-wrap: wrap
+  margin: 0 0 33px
+
+  &:last-child
+    margin: 0
+
+  .label-size
+    margin: 0 16px 0 0
+    position: relative
+
+.sizes-product-title
+  display: flex
+  align-items: center
+  font-size: 18px
+  color: #333
+  margin: 0 32px 0 0
+  min-width: 130px
+
+.sizes-product-title__icon
+  margin: 0 17px 0 0
+  width: 42px
+  height: 27px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.label-size
+  position: relative
+  width: 120px
+  height: 32px
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #333
+  font-size: 14px
+  cursor: pointer
+
+  input
+    cursor: pointer
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: transparent
+    border-radius: 3px
+    border: solid 1px #dfdfdf
+    padding: 0
+    text-align: center
+
+.label-size__text
+  display: block
+  z-index: 1
+
+.label-size__inp:checked
+  background: $accent
+  border-color: $accent
+
+  + .label-size__text
+    color: #fff
+
+.form-total
+  position: relative
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  z-index: 1
+  padding: 9px 0
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    transform: translate(-50%,0)
+    top: 0
+    background: #fff
+    min-width: 2300px
+    height: 100%
+    box-shadow: -0.5px 13px 40px 0 rgba(13, 144, 208, 0.3)
+    z-index: -1
+
+.links-prev
+  font-size: 15px
+  display: flex
+  align-items: center
+  &:before
+    content: ''
+    font-family: $icon-font
+    font-size: 15px
+    margin: 0 10px 0 0
+
+.total-price
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 16px
+  font-weight: bold
+  color: #333
+  &__val
+    margin: 0 0 0 10px
+    font-size: 22px
+
+
+.nav-tabs-form
+  margin: 0
+  width: 100%
+  .nav-item
+    flex: auto
+  .nav-link
+    margin: 0
+    padding: 0
+    border: none
+      radius: 0
+    text-align: left
+    width: 100%
+    &.active
+      background: transparent
+
+
+.components-title
+  display: block
+  font-weight: bold
+  font-size: 16px
+  margin: 0 0 20px
+  color: #333
+  text-align: left
+
+.components-no
+  .components-title
+    color: #999
+
+.components-variable
+  display: flex
+  align-items: flex-start
+  font-size: 14px
+  color: #999
+  &__color
+    width: 28px
+    height: 28px
+  &__name
+    width: calc(100% - 28px)
+    padding: 0 0 0 6px
+    max-width: 160px
+
+.label-components
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  margin: 0 0 48px
+  max-width: 300px
+  &:last-child
+    margin: 0
+  &__inp
+    display: none
+  &__price
+    font-size: 14px
+    white-space: nowrap
+    color: #333
+
+.label-components-row
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  cursor: pointer
+
+.label-components__inp:checked
+  + .label-components-row
+      .label-components__price
+        color: $accent
+      .label-components-color__img
+        border-radius: 3px
+        border: solid 1px #0d90d0
+        padding: 6px
+        &:before
+          background: #0d90d0
+
+
+.label-components-color
+  display: flex
+  align-items: flex-start
+  font-size: 14px
+  color: #333
+  text-align: left
+
+  &__img
+    width: 48px
+    height: 48px
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    transition: .3s ease
+    &:before
+      content: ''
+      position: absolute
+      width: 12px
+      height: 12px
+      border-radius: 3px
+      top: -8px
+      right: -4px
+      font-size: 10px
+      color: #fff
+      font-family: $icon-font
+      display: flex
+      align-items: center
+      justify-content: center
+      transition: .3s ease
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__name
+    margin: 0 0 0 13px
+    line-height: 1.57
+    max-width: 130px
+    
 /*==========  order page end ==========*/
