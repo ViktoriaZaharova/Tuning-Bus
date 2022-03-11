@@ -1,5 +1,14 @@
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1440px) {
+  .home-img-master {
+    min-width: 370px;
+    max-width: 370px; }
+  .home-img {
+    min-width: 600px;
+    max-width: 650px;
+    margin: 80px 0 0 -140px; } }
+
 @media only screen and (max-width: 1200px) {
   .services-image {
     max-width: 850px; }
@@ -13,8 +22,6 @@
   .type-cars-box {
     margin: 0 auto 30px;
     width: 100%; }
-  .home-img {
-    min-width: 700px; }
   .menu li {
     margin: 0 20px 0 0; }
   .btn-search {
@@ -27,7 +34,13 @@
     margin: 0 0 10px;
     width: 100%; }
   .home-img-master {
-    min-width: 434px; } }
+    min-width: 340px;
+    max-width: 340px;
+    margin: 0 100px 0 -20px; }
+  .master-quote {
+    left: -250px; }
+  .page-top {
+    height: auto; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -497,4 +510,38 @@
   .components-variable__name {
     max-width: none; }
   .form-step {
-    margin: 0 0 40px; } }
+    margin: 0 0 40px; }
+  .dropdown-phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .dropdown-phone .dropdown-toggle {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 0;
+      color: #0d90d0;
+      font-size: 20px; }
+      .dropdown-phone .dropdown-toggle:after {
+        font-size: 16px; }
+    .dropdown-phone .dropdown-menu {
+      margin: 19px 0 0;
+      padding: 10px;
+      left: auto !important;
+      right: 0 !important;
+      -webkit-transform: translateX(0) !important;
+              transform: translateX(0) !important; }
+      .dropdown-phone .dropdown-menu:before {
+        left: auto;
+        right: 10px; }
+    .dropdown-phone .phone {
+      color: #333;
+      margin: 0 0 5px; }
+  .header-box {
+    display: none; } }

@@ -66,6 +66,13 @@ header {
       .menu li a:hover {
         color: #0d90d0; }
 
+.dropdown.show .dropdown-toggle {
+  color: #0d90d0; }
+  .dropdown.show .dropdown-toggle:after {
+    color: #0d90d0;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+
 .dropdown-toggle::after {
   border: none;
   content: '';
@@ -190,7 +197,8 @@ header {
   -webkit-box-shadow: -0.5px 13px 40px 0 rgba(13, 144, 208, 0.3);
           box-shadow: -0.5px 13px 40px 0 rgba(13, 144, 208, 0.3);
   background-color: #fff;
-  padding: 30px 24px 28px; }
+  padding: 30px 24px 28px;
+  border-radius: 0 0 10px 10px; }
   .dropdown-works:before {
     content: '';
     position: absolute;
@@ -254,6 +262,9 @@ header {
   margin: 0 auto 25px; }
   .list-works-item__img img {
     max-height: 100%; }
+
+.list-works-item:hover .list-works-item__name {
+  color: #0d90d0; }
 
 .btn-burger {
   display: none;
@@ -342,5 +353,8 @@ header {
   .btn-close:after {
     -webkit-transform: rotate(135deg);
             transform: rotate(135deg); }
+
+.dropdown-phone {
+  display: none; }
 
 /*==========  header end  ==========*/

@@ -1,18 +1,19 @@
 // Инициализация карты
 ymaps.ready(init);
 
-function init () {
+function init() {
 
     //Центрирование и выбор масштаба карты
     var myMap = new ymaps.Map('map', {
         center: [59.866396, 30.355969],
-        zoom: 16
+        zoom: 17
     });
+
 
     // Создание своей метки
     var myPlacemark = new ymaps.Placemark(
         // Координаты метки
-        [59.866396, 30.355969] , {
+        [59.866396, 30.355969], {
             // Свойства метки
             hintContent: '', //Подсказка при наведении на маркер
             iconContent: '',
@@ -20,9 +21,10 @@ function init () {
         }, {
             iconImageHref: 'img/logo.png',  // картинка иконки
             iconImageSize: [59, 62],                                      // размеры картинки
-            // iconImageOffset: [-70, -40],// смещение картинки
+            // iconImageOffset: [220, 0],// смещение картинки
 
         });
+
 
     // Добавление метки на карту
     myMap.geoObjects.add(myPlacemark);
@@ -34,9 +36,11 @@ function init () {
         // Список типов карты
         .add('typeSelector')
         // Кнопка изменения масштаба - справа
-        .add('smallZoomControl', { right: 5, top: 75 })
+        .add('smallZoomControl', {right: 5, top: 75})
         // Стандартный набор кнопок
         .add('mapTools')
         //Линейка масштаба
         .add(new ymaps.control.ScaleLine());
+
+
 }

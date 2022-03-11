@@ -33,6 +33,12 @@
         color: #fff; }
       .home-ford .form label input::placeholder {
         color: #fff; }
+      .home-ford .form label input:focus {
+        border-color: #0d90d0; }
+  .home-ford .form .error-label input {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-color: #ff4343; }
   .home-ford .form .checkbox {
     margin: 30px 0 34px;
     color: #cbcbcb; }
