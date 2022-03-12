@@ -1,21 +1,14 @@
-$(function () {
-    var topPos = $('.form-order').offset().top;
-    $(window).scroll(function () {
-        var top = $(document).scrollTop();
-            // pip = $('footer, .advantages-order, .contact-section').offset().top,
-            // height = $('.form-total').outerHeight();
-        if (top > topPos && top) {
-            $('.form-total').addClass('scroll');
-        }
-        // else if (top > pip - height) {
-        //     $('.form-total').removeClass('scroll');
-        // }
+$(window).scroll(function () {
+    var scroll_picca = $('.form-order').offset().top;
 
-        else {
-            $('.form-total').removeClass('scroll');
-        }
-    });
+    if ($(this).scrollTop() > scroll_picca) {
+        $('.form-total').addClass('scroll');
+
+    } else {
+        $('.form-total').removeClass('scroll');
+    }
 });
+
 
 $(document).ready(function () {
 
@@ -50,10 +43,10 @@ $(document).ready(function () {
     };
 
 // Запускаем функцию при прокрутке страницы
-    window.addEventListener('scroll', function() {
-        visible (element);
+    window.addEventListener('scroll', function () {
+        visible(element);
     });
 
 // А также запустим функцию сразу. А то вдруг, элемент изначально видно
-    visible (element);
-})
+    visible(element);
+});
