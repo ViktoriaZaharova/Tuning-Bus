@@ -66,6 +66,9 @@
       color: #0d90d0; }
 
 .recommended-article {
+  margin: 0 0 60px; }
+
+.recommended-article-section {
   margin: 0 0 170px; }
 
 .recommended-article-slider .slick-slide {
@@ -73,6 +76,9 @@
 
 .recommended-article-slider .slick-list {
   margin: 0 -8px; }
+
+.recommended-article-slider .product-card {
+  margin: 0 0 120px; }
 
 .page-article .box-text {
   margin: 0 0 43px; }

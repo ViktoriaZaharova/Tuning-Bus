@@ -98,20 +98,29 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 -10px; }
 
 .car-brands-item {
   width: 14%;
-  padding: 0 10px;
+  padding: 10px;
   text-align: center;
-  margin: 0 auto 50px;
+  margin: 0 auto 40px;
   letter-spacing: 0.16px;
-  font-size: 16px; }
+  font-size: 16px;
+  color: #333;
+  border: solid 3px transparent;
+    border-radius: 15px;
+  cursor: pointer; }
+  .car-brands-item:hover {
+    -webkit-box-shadow: -0.5px 13px 40px 0 rgba(13, 144, 208, 0.3);
+            box-shadow: -0.5px 13px 40px 0 rgba(13, 144, 208, 0.3);
+    border: solid 3px #0d90d0;
+    color: #0d90d0; }
   .car-brands-item__logo {
     display: -webkit-box;
     display: -ms-flexbox;

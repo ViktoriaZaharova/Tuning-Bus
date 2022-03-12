@@ -135,6 +135,9 @@
   margin: 0 0 40px
   width: 100%
   font-size: 18px
+  position: relative
+  display: block
+  height: 100%
   &__img
     display: flex
     align-items: center
@@ -161,6 +164,29 @@
     font-size: 18px
     font-weight: bold
     color: #333
+  &:hover
+    z-index: 2
+    .product-card-wrapper
+      position: absolute
+      left: 0
+      top: 0
+      border-color: $accent
+      box-shadow: -0.5px 13px 40px 0 rgba(13, 144, 208, 0.3)
+      .btn
+        display: flex
+
+.product-card-wrapper
+  width: 100%
+  background: #fff
+  border: 3px solid transparent
+    radius: 15px
+  padding: 0 18px 22px
+  .btn
+    display: none
+    width: 100%
+    margin: 19px auto 0
+
+
 
 .amount
   border-radius: 3px

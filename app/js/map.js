@@ -43,4 +43,18 @@ function init() {
         .add(new ymaps.control.ScaleLine());
 
 
+
+
+    function onResizeMap() {
+        if ($(window).width() > '992') {
+            //Set New center
+            myMap.setCenter([59.866396, 30.351976], 17, {
+                checkZoomRange: true
+            });
+        }
+    } onResizeMap();
+
+    window.onresize = function () {
+        onResizeMap();
+    };
 }
