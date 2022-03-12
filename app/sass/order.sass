@@ -3,7 +3,7 @@
 /*==========  order page  ==========*/
 .order-home
   padding-bottom: 89px
-
+  position: relative
   &__image
     display: flex
     align-items: center
@@ -19,7 +19,7 @@
 
 
 .form-order
-  margin: 100px 0 0
+  margin: 100px 0 150px
 
   .label-parameters-bus
     &:last-child
@@ -202,18 +202,26 @@
     color: #fff
 
 .form-total
-  position: fixed
+  position: absolute
   left: 0
   bottom: 20px
   width: 100%
-  display: flex
-  align-items: center
-  flex-wrap: wrap
-  justify-content: space-between
+  display: block
   z-index: 1
   padding: 9px 0
   box-shadow: -0.5px 13px 40px 0 rgba(13, 144, 208, 0.3)
   background: #fff
+
+.floating
+  position: absolute
+  left: 0
+  bottom: 70px
+  &.scroll
+    position: fixed
+    left: 0
+    bottom: 20px
+    margin: 0
+
 
 .form-total-wrapper
   width: 100%

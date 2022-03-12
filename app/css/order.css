@@ -1,7 +1,8 @@
 @charset "UTF-8";
 /*==========  order page  ==========*/
 .order-home {
-  padding-bottom: 89px; }
+  padding-bottom: 89px;
+  position: relative; }
   .order-home__image {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -20,7 +21,7 @@
       padding: 0 33px; }
 
 .form-order {
-  margin: 100px 0 0; }
+  margin: 100px 0 150px; }
   .form-order .label-parameters-bus:last-child {
     margin: 0 auto 40px; }
   .form-order button[type="submit"] {
@@ -217,26 +218,26 @@
     color: #fff; }
 
 .form-total {
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 20px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: block;
   z-index: 1;
   padding: 9px 0;
   -webkit-box-shadow: -0.5px 13px 40px 0 rgba(13, 144, 208, 0.3);
           box-shadow: -0.5px 13px 40px 0 rgba(13, 144, 208, 0.3);
   background: #fff; }
+
+.floating {
+  position: absolute;
+  left: 0;
+  bottom: 70px; }
+  .floating.scroll {
+    position: fixed;
+    left: 0;
+    bottom: 20px;
+    margin: 0; }
 
 .form-total-wrapper {
   width: 100%;
