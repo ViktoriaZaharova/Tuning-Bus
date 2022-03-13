@@ -1,6 +1,8 @@
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1510px) {
+  h1 {
+    font-size: 45px; }
   .home-img {
     min-width: 600px;
     max-width: 650px;

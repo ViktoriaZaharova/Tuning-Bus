@@ -3,7 +3,7 @@
 /*==========  header  ==========*/
 header
   position: fixed
-  z-index: 3
+  z-index: 4
   left: 0
   top: 0
   width: 100%
@@ -221,7 +221,7 @@ header
       padding: 0 10px
       &:hover
         color: $accent
-    .list-works-item__img
+    .list-works-item__img, .list-works-item__name
       padding: 0
 
 .list-works-item
@@ -237,6 +237,8 @@ header
   &:hover
     .list-works-item__name
       color: $accent
+  &__name
+    margin: 0 auto
 
 .btn-burger
   display: none
