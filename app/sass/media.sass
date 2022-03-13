@@ -11,10 +11,15 @@
 
 
   .home-img-master
-    min-width: 360px
-    max-width: 360px
+    min-width: 340px
+    max-width: 340px
     margin: 10px 0 0 -60px
 
+  .home-ford
+    .form
+      margin: 20px 0 0
+      p
+        margin: 0 0 10px
 
 @media only screen and (max-width : 1200px)
   .services-image
@@ -390,7 +395,7 @@
     margin: 30px 0 0
 
   .form-order
-    margin: 50px 0 150px
+    margin: 50px 0 100px
 
   .form-step
     margin: 0 0 60px
@@ -407,8 +412,6 @@
     flex: none
     width: 33.3%
 
-  .form-total
-    bottom: 20px
 
   .form-total-wrapper
     flex-direction: column
@@ -510,6 +513,12 @@
   .form-order .tab-content
     margin: 40px 0 0
 
+  .works-box-v2
+    transform: skewX(-12deg)
+    .works-box__content
+      transform: skewX(12deg)
+      padding: 0 80px 9px 56px
+
 @media only screen and (max-width : 480px)
   h2
     font-size: 22px
@@ -550,7 +559,12 @@
       bottom: -10px
 
   header .logo
-    left: 12%
+    left: 0
+
+  header.fixed
+    padding: 3px 0 0
+    .logo
+      max-width: 60px
 
   .phone
     font-size: 15px

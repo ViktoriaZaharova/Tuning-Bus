@@ -254,7 +254,7 @@
   overflow: hidden
   height: 270px
   width: 100%
-  border: 3px solid transparent
+  border: none
     radius: 15px
   position: relative
   transition: .3s ease
@@ -269,28 +269,47 @@
     width: 100%
     height: 70%
     transition: .3s ease
+  &:after
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    border-radius: 15px
   img
     width: 100%
     height: 100%
     object-fit: cover
   &__content
     position: absolute
+    width: 100%
+    height: 100%
     left: 0
     bottom: 0
     padding: 0 39px 9px 26px
     display: none
     color: #fff
     transition: .3s ease
+    align-items: flex-end
     &:hover
       color: #fff
+  &__img
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
   &:hover
     box-shadow: -0.5px 13px 40px 0 rgba(13, 144, 208, 0.3)
-    border: solid 3px #0d90d0
     color: #fff
+    &:after
+      border: solid 3px #0d90d0
     &:before
       background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(13,144,208,1) 100%)
     .works-box__content
-      display: block
+      display: flex
+
 
 
 .works-box-horizontal

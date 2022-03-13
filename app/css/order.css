@@ -21,7 +21,7 @@
       padding: 0 33px; }
 
 .form-order {
-  margin: 100px 0 150px; }
+  margin: 100px 0; }
   .form-order .label-parameters-bus:last-child {
     margin: 0 auto 40px; }
   .form-order button[type="submit"] {
@@ -220,7 +220,7 @@
 .form-total {
   position: absolute;
   left: 0;
-  bottom: 20px;
+  bottom: 0;
   width: 100%;
   display: block;
   z-index: 1;
@@ -232,11 +232,11 @@
 .floating {
   position: absolute;
   left: 0;
-  bottom: 70px; }
+  bottom: 0; }
   .floating.scroll {
     position: fixed;
     left: 0;
-    bottom: 20px;
+    bottom: 0;
     margin: 0; }
 
 .form-total-wrapper {

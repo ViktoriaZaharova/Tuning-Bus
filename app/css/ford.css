@@ -72,9 +72,13 @@
     z-index: 1;
     width: calc(100% + 80px);
     left: 50%; }
+  .works-box-v2:after {
+    border-radius: 0; }
   .works-box-v2 .works-box__content {
     -webkit-transform: skewX(15deg);
             transform: skewX(15deg);
+    left: -30px;
+    padding: 0 70px 9px 56px;
     z-index: 1;
     width: calc(100% + 80px); }
 
