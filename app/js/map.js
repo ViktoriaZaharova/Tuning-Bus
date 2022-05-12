@@ -5,7 +5,7 @@ function init() {
 
     //Центрирование и выбор масштаба карты
     var myMap = new ymaps.Map('map', {
-        center: [59.866429, 30.355836],
+        center: [59.866460, 30.356294],
         zoom: 17
     });
 
@@ -13,7 +13,7 @@ function init() {
     // Создание своей метки
     var myPlacemark = new ymaps.Placemark(
         // Координаты метки
-        [59.866429, 30.355836], {
+        [59.866460, 30.356294], {
             // Свойства метки
             hintContent: '', //Подсказка при наведении на маркер
             iconContent: '',
@@ -48,7 +48,7 @@ function init() {
     function onResizeMap() {
         if ($(window).width() > '992') {
             //Set New center
-            myMap.setCenter([59.866396, 30.351976], 17, {
+            myMap.setCenter([59.866460, 30.356294], 17, {
                 checkZoomRange: true
             });
         }
