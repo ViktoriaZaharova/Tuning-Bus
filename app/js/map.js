@@ -48,7 +48,7 @@ function init() {
     function onResizeMap() {
         if ($(window).width() > '992') {
             //Set New center
-            myMap.setCenter([59.866460, 30.356294], 17, {
+            myMap.setCenter([59.866396, 30.351976], 17, {
                 checkZoomRange: true
             });
         }
