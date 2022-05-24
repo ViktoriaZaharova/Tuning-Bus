@@ -38,6 +38,11 @@
     font-size: 24px
     color: #fff
 
+.home-reverse
+  .container
+    &:before
+      left: -180px
+
 .home-img
   min-width: 813px
   display: flex
@@ -269,6 +274,7 @@
     width: 100%
     height: 70%
     transition: .3s ease
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(#000,1) 100%)
   &:after
     content: ''
     position: absolute
@@ -287,11 +293,12 @@
     height: 100%
     left: 0
     bottom: 0
-    padding: 0 39px 9px 26px
-    display: none
+    padding: 0 39px 9px 20px
+    display: flex
     color: #fff
     transition: .3s ease
     align-items: flex-end
+
     &:hover
       color: #fff
   &__img
@@ -307,8 +314,7 @@
       border: solid 3px #0d90d0
     &:before
       background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(13,144,208,1) 100%)
-    .works-box__content
-      display: flex
+
 
 
 
